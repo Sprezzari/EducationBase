@@ -1,68 +1,68 @@
-# 🎓 **EducationBase** - Sistema de Gerenciamento de Formações Educacionais
+# 🎓 **EducationBase** - Educational Training Management System
 
-Um sistema robusto e escalável para gerenciar uma vasta base de dados de formações educacionais, cursos e treinamentos profissionais. Conecta estruturas acadêmicas tradicionais com oportunidades de aprendizado contínuo.
-
----
-
-## ✨ **Características**
-
-- 📚 **Banco de Dados Abrangente**: 600+ cursos de bacharelado, técnico e tecnólogo
-- 🔧 **Arquitetura Modular**: Separação clara de responsabilidades
-- 🛡️ **Segurança**: Configuração YAML centralizada
-- ⚡ **Escalabilidade**: Pronto para crescimento da base de dados
-- 📊 **Structured Data**: JSON para fácil manutenção e importação
+A robust and scalable system for managing a vast database of educational trainings, courses, and professional training programs. Connects traditional academic structures with continuous learning opportunities.
 
 ---
 
-## 🏗️ **Arquitetura do Projeto**
+## ✨ **Features**
+
+- 📚 **Comprehensive Database**: 600+ bachelor's, technical, and technologist courses
+- 🔧 **Modular Architecture**: Clear separation of responsibilities
+- 🛡️ **Security**: Centralized YAML configuration
+- ⚡ **Scalability**: Ready for database growth
+- 📊 **Structured Data**: JSON for easy maintenance and import
+
+---
+
+## 🏗️ **Project Architecture**
 
 ```
 EducationBase/
-├── config.yml                 # Configurações do banco de dados
-├── config_loader.py          # Carregador de configurações YAML
-├── database_manager.py       # Gerenciador de conexões e schema MySQL
-├── data_inserter.py         # Insertador de dados JSON
-├── data_constants.json      # Base de dados em JSON (600+ registros)
-├── main.py                  # Script principal de orquestração
-├── requirements.txt         # Dependências Python
-└── README.md               # Este arquivo
+├── config.yml                 # Database configuration
+├── config_loader.py          # YAML configuration loader
+├── database_manager.py       # MySQL connection and schema manager
+├── data_inserter.py         # JSON data inserter
+├── data_constants.json      # JSON database (600+ records)
+├── main.py                  # Main orchestration script
+├── requirements.txt         # Python dependencies
+└── README.md               # This file
 ```
 
 ---
 
-## 🚀 **Início Rápido**
+## 🚀 **Quick Start**
 
-### **Pré-requisitos**
+### **Prerequisites**
 
 - Python 3.8+
 - MySQL Server 8.0+
 - pip (Python package manager)
 
-### **Instalação**
+### **Installation**
 
-1. **Clone o repositório**
+1. **Clone the repository**
 ```bash
-git clone https://github.com/seu-usuario/EducationBase.git
+git clone https://github.com/your-user/EducationBase.git
 cd EducationBase
 ```
 
-2. **Instale as dependências**
+2. **Install dependencies**
 ```bash
 pip install -r requirements.txt
 ```
 
-3. **Configure o banco de dados**
-Edite `config.yml` com suas credenciais MySQL:
+3. **Configure the database**
+Edit `config.yml` with your MySQL credentials:
 ```yaml
 database:
   host: localhost
   port: 3306
   user: root
-  password: sua_senha
+  password: your_password
   database: peoplecore
 ```
 
-4. **Execute o sistema**
+4. **Run the system**
 ```bash
 python main.py
 ```
